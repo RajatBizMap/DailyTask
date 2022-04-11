@@ -22,7 +22,7 @@ $(window).on('load', function() {
 })
 */
 
-
+/*
 
 $(window).on('load', function() {
 
@@ -31,4 +31,20 @@ $(window).on('load', function() {
 //console.log(frappe.defaults.get_user_default("Company"))
 
 })
+*/
+
+
+
+function my(){
+     
+    $(`<span >${frappe.defaults.get_user_default("Company")}</span>`).insertAfter("#navbar-breadcrumbs")
+
+}
+
+window.onload = function(){
+
+my()
+console.log(frappe.defaults.get_user_default("Company"))
+}
+
 

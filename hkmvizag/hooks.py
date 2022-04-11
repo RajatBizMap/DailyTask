@@ -20,7 +20,7 @@ app_license = "MIT"
 # include js, css files in header of web template
 # web_include_css = "/assets/hkmvizag/css/hkmvizag.css"
 # web_include_js = "/assets/hkmvizag/js/hkmvizag.js"
-#app_include_js = "/assets/hkmvizag/js/whitelabel.js"
+app_include_js = "/assets/hkmvizag/js/whitelabel.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "hkmvizag/public/scss/website"
@@ -49,6 +49,7 @@ app_license = "MIT"
 #	"Role": "home_page"
 # }
 
+after_migrate = ['hkmvizag.api.whitelabel_patch']
 # Generators
 # ----------
 
@@ -176,11 +177,15 @@ app_license = "MIT"
 # 		"doctype": "{doctype_4}"
 # 	}
 # ]
-
+boot_session = "hkmvizag.api.boot_session"
 # Authentication and authorization
 # --------------------------------
 
 # auth_hooks = [
 # 	"hkmvizag.auth.validate"
 # ]
+override_whitelisted_methods = {
+	"frappe.utils.change_log.show_update_popup": "hkmvizag.api.ignore_update_popup"
+}
+
 
