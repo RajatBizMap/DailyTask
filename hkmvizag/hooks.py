@@ -16,9 +16,11 @@ app_license = "MIT"
 # app_include_css = "/assets/hkmvizag/css/hkmvizag.css"
 # app_include_js = "/assets/hkmvizag/js/hkmvizag.js"
 
+
 # include js, css files in header of web template
 # web_include_css = "/assets/hkmvizag/css/hkmvizag.css"
 # web_include_js = "/assets/hkmvizag/js/hkmvizag.js"
+#app_include_js = "/assets/hkmvizag/js/whitelabel.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "hkmvizag/public/scss/website"
@@ -31,7 +33,7 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+#doctype_js = {"Whitelabel Setting" : "public/js/WhitelableNav.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
